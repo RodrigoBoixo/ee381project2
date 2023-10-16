@@ -23,9 +23,10 @@ for i in range(N):
     success = success + yes
 
 
-fails = 100000 - success
-
-S = [success/100000, fails/100000]
+fails = N - success
+print(success)
+S = [success/N, fails/N]
+print(S[0])
 # Create a list of the possible outcomes
 outcomes = ["success", "fail"]
 
