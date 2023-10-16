@@ -11,6 +11,7 @@ for i in s:
 fails = 100000 - success
 
 S = [success/100000, fails/100000]
+print(success/100000)
 # Create a list of the possible outcomes
 outcomes = ["success", "fail"]
 
@@ -30,8 +31,5 @@ plt.stem(outcomes, probabilities)
 plt.title('PMF of the outcome of rolling two fair dice')
 plt.xlabel('Outcome')
 plt.ylabel('Probability')
-
-plt.show()
-
 
 plt.show()
