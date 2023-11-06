@@ -33,14 +33,14 @@ plt.figure(1)
 plt.bar(xout[:-1], pdf, width=del_, align='edge', alpha=0.6)
 plt.grid(True)
 
-# Overlay plot of Gaussian distribution for comparison
+
 def gaussian_pdf(x, mu, sig):
     return (1 / (sig * np.sqrt(2 * np.pi))) * np.exp(-((x - mu) ** 2) / (2 * sig ** 2))
 
 z = np.arange(min(X), max(X), 0.1)
 plt.plot(z, gaussian_pdf(z, mu, sig), 'r', linewidth=3)
 
-# Print mean thickness and standard deviation
+
 print("Mean Thickness:", mean_thickness)
 print("Standard Deviation:", std_dev)
 
